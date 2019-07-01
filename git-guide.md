@@ -82,4 +82,4 @@ git checkout -b my-branch
 git branch -d my-branch
 ```
 
-**Note:** 
+**Note:** Use '-D' if the branch has not been merged.</p>
