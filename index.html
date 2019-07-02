@@ -19,7 +19,8 @@
 
     <script>
         console.log('Hey class.')
-        do {
+        while (1===1)
+        {
             var score = 0;
             var firstAnswer = prompt('Who is from New York City?');
             if (firstAnswer === James) {
@@ -51,8 +52,8 @@
             }
             var finalResponse = prompt('How many questions did you get right?')
             if (finalResponse === score) {
-                alert('Yep, you got' score + 'out of four. You said' + firstAnswer + 'is from New York,' 
-                secondAnswer + 'works with telescopes,'  thirdAnswer + 'studied economics and' fourthAnswer + 
+                alert('Yep, you got' + score + 'out of four. You said' + firstAnswer + 'is from New York,' +
+                secondAnswer + 'works with telescopes,' + thirdAnswer + 'studied economics and' + fourthAnswer + 
                 'works in a school. DeltaV rocks!')
             }else{
                 alert('Try again.')
