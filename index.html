@@ -18,47 +18,42 @@
     </ul>
 
     <script>
-        console.log('Hey class.')
-        while (1===1)
-        {
-            var score = 0;
-            var firstAnswer = prompt('Who is from New York City?');
-            if (firstAnswer === James) {
-                alert('You said' + firstAnswer + 'is from New York City.  That\'s correct!')
-                score = score + 1
-            } else {
-                alert('You said' + firstAnswer + 'is from New York City.  Almost. It is James.')
-            }
-            var secondAnswer = prompt('Who works with telescopes?')
-            if (secondAnswer === Katie) {
-                alert('You said' + secondAnswer + 'works with telescopes.  That\'s correct!')
-                score = score + 1
-            } else {
-                alert('You said' + secondAnswer + 'works with telescopes.  Nice try but that is not right. It is Katie.')
-            }
-            var thirdAnswer = prompt('Who went to school for economics?')
-            if (thirdAnswer === Jon) {
-                alert('You said' + thirdAnswer + 'went to school for economics. That\'s correct!')
-                score = score + 1
-            } else {
-                alert('You said' + thirdAnswer + 'went to school for economics. Great guess but that is not correct. It is Jon.')
-            }
-            var fourthAnswer = prompt('Who works in a school?')
-            if (fourthAnswer === Terra) {
-                alert('You said' + fourthAnswer + 'works in a school. That\'s correct!')
-                score = score + 1
-            } else {
-                alert('You said' + fourthAnswer + 'works in a school.  That\'s not correct. It is Terra.')
-            }
-            var finalResponse = prompt('How many questions did you get right?')
-            if (finalResponse === score) {
-                alert('Yep, you got' + score + 'out of four. You said' + firstAnswer + 'is from New York,' +
-                secondAnswer + 'works with telescopes,' + thirdAnswer + 'studied economics and' + fourthAnswer + 
-                'works in a school. DeltaV rocks!')
-            }else{
-                alert('Try again.')
-            }
+        console.log('Hey class');
+        var score = 0;
+        var firstAnswer = prompt('Who is from New York City?');
+        if (firstAnswer === 'James') {
+            alert('You said ' + firstAnswer + ' is from New York City.  That\'s correct!')
+            score = score + 1
+        } else {
+            alert('You said ' + firstAnswer + ' is from New York City.  Almost. It is James.')
         }
+        var secondAnswer = prompt('Who works with telescopes?')
+        if (secondAnswer === 'Katie') {
+            alert('You said ' + secondAnswer + ' works with telescopes.  That\'s correct!')
+            score = score + 1
+        } else {
+            alert('You said ' + secondAnswer + ' works with telescopes.  Nice try but that is not right. It is Katie.')
+        }
+        var thirdAnswer = prompt('Who went to school for economics?')
+        if (thirdAnswer === 'Jon') {
+            alert('You said ' + thirdAnswer + ' went to school for economics. That\'s correct!')
+            score = score + 1
+        } else {
+            alert('You said ' + thirdAnswer + ' went to school for economics. Great guess but that is not correct. It is Jon.')
+        }
+        var fourthAnswer = prompt('Who works in a school?')
+        if (fourthAnswer == 'Terra' || fourthAnswer == 'Andy') {
+            alert('You said ' + fourthAnswer + ' works in a school. That\'s correct!')
+            score = score + 1
+        } else {
+            alert('You said ' + fourthAnswer + ' works in a school.  That\'s not correct. It is Terra or Andy.')
+        }
+        var finalResponse = prompt('How many questions did you get right?')
+        alert('You got ' + score + ' out of four questions correct. You said ' + firstAnswer + ' is from New York,' +
+            secondAnswer + ' works with telescopes, ' + thirdAnswer + ' studied economics and ' + fourthAnswer +
+            ' works in a school. DeltaV rocks!')
+
+
     </script>
 </body>
 
